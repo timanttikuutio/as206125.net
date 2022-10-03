@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="tcp.systems" />
-        <meta property="og:title" content="tcp.systems" />
-        <link rel="icon" type="image/x-icon" href="/terminal.png">
-        <title>tcp.systems</title>
-        <style>
-            html,body {
-                margin: 0;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #3B82F6;
-            }
-            div {
-                max-width: 99vw;
-                padding: 0 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=verminal&wt=none&l=text%2Fapache&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2523%2520Request%250AGET%2520https%253A%252F%252Ftcp.systems%252F%2520HTTP%252F1.1%250A%250A%2523%2520Response%250AHTTP%252F1.1%2520200%2520OK%250ADate%253A%2520Mon%252C%25202%2520Jan%25202006%252015%253A04%253A05%2520GMT%250AServer%253A%2520tcp.systems%250AConnection%253A%2520keep-alive%250AContent-Type%253A%2520text%252Fplain%250A%250A%2523%2520Information%250ADomain%253A%2520tcp.systems%250AASN%253A%2520AS203232%250AEmail%253A%2520contact%2540tcp.systems%250AParent%253A%2520Xenode%2520Limited%0D%0A" style="width: 680px; height: 492px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin"></iframe>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="tcp.systems" />
+    <meta property="og:title" content="tcp.systems" />
+    <link rel="icon" type="image/x-icon" href="/terminal.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>tcp.systems</title>
+  </head>
+  <div class="flex min-h-screen w-full items-center justify-center bg-blue-600 p-4">
+    <div class="w-full max-w-sm rounded bg-black bg-opacity-75 font-mono sm:max-w-md md:max-w-2xl">
+      <div class="flex w-full flex-row rounded bg-gray-900 py-2 px-2 font-sans">
+        <span class="blue bg-opacity-35 rounded bg-white bg-opacity-10 py-2 px-4 font-medium text-white">TCP Systems</span>
+        <div class="my-auto ml-auto flex flex-row gap-2 pr-3">
+          <div class="h-4 w-4 rounded-full bg-red-600"></div>
+          <div class="h-4 w-4 rounded-full bg-yellow-600"></div>
+          <div class="h-4 w-4 rounded-full bg-green-600"></div>
         </div>
-    </body>
+      </div>
+      <div class="w-full px-4 pb-4">
+        <span class="text-gray-400"># Request</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">GET</span> https://tcp.systems/ HTTP/1.1</span>
+        <br />
+        <br />
+        <span class="text-gray-400"># Response</span>
+        <br />
+        <span class="text-green-200"> <span class="text-blue-500">HTTP/1.1</span> 200 OK</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Date:</span> Mon, 2 Jan 2006 15:04:05 GMT</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Server:</span> tcp.systems</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Connection:</span> keep-alive</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Content-Type:</span> text/plain</span>
+        <br />
+        <br />
+        <span class="text-gray-400"># Information</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Domain:</span> tcp.systems</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">ASN:</span> AS203232</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Email:</span> contact@tcp.systems</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Parent:</span> Xenode Limited</span>
+      </div>
+    </div>
 </html>

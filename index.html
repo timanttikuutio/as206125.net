@@ -30,7 +30,7 @@
         <br />
         <span class="text-green-400"> <span class="text-blue-500">HTTP/1.1</span> 200 OK</span>
         <br />
-        <span class="text-white"><span class="text-blue-500">Date:</span> Mon, 2 Jan 2006 15:04:05 GMT</span>
+        <span class="text-white" id="datetime"><span class="text-blue-500">Date:</span></span>
         <br />
         <span class="text-white"><span class="text-blue-500">Server:</span> as206125.net</span>
         <br />
@@ -50,4 +50,13 @@
         <span class="text-white"><span class="text-blue-500">Parent:</span> Nicklas YLi-Länttä</span>
       </div>
     </div>
+    <script>
+      // Get current date and time
+      var now = new Date();
+      var datetime = now.toLocaleString();
+    
+      // Insert date and time into HTML
+      document.getElementById("datetime").innerHTML = datetime;
+    </script>
+
 </html>

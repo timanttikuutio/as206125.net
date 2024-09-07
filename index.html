@@ -65,6 +65,10 @@
       // get HTTP proto version
       var http_proto_ver = performance.getEntries()[0].nextHopProtocol.toUpperCase();
 
+      if (http_proto_ver == "H2") {
+        http_proto_ver = "HTTP/2";
+      }
+
       // Insert HTTP protocol version to the document
       document.getElementById("httpver").innerHTML = http_proto_ver;
       document.getElementById("httpver2").innerHTML = http_proto_ver;

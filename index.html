@@ -23,12 +23,14 @@
       <div class="w-full px-4 pb-4">
         <span class="text-gray-400"># Request</span>
         <br />
-        <span class="text-white"><span class="text-blue-500">GET</span> https://as206125.net/ HTTP/1.1</span>
+        <span class="text-white"><span class="text-blue-500">GET</span> https://as206125.net/</span>
+        <span class="text-white" id="httpver"></span>
         <br />
         <br />
         <span class="text-gray-400"># Response</span>
         <br />
-        <span class="text-green-400"> <span class="text-blue-500">HTTP/1.1</span> 200 OK</span>
+        <span class="text-blue-500" id="httpver2"></span>
+        <span class="text-green-400">200 OK</span>
         <br />
         <span class="text-blue-500">Date: </span><span class="text-white" id="datetime"></span>
         <br />
@@ -39,13 +41,15 @@
         <span class="text-white"><span class="text-blue-500">Content-Type:</span> text/plain</span>
         <br />
         <br />
-        <span class="text-gray-400"># Information</span>
+        <span class="text-gray-400"># Contact information</span>
         <br />
         <span class="text-white"><span class="text-blue-500">Domain:</span> as206125.net</span>
         <br />
         <span class="text-white"><span class="text-blue-500">ASN:</span> AS206125</span>
         <br />
-        <span class="text-white"><span class="text-blue-500">Contact:</span> noc@as206125.net</span>
+        <span class="text-white"><span class="text-blue-500">NOC contact:</span> noc@as206125.net</span>
+        <br />
+        <span class="text-white"><span class="text-blue-500">Abuse contact:</span> abuse@as206125.net</span>
         <br />
         <span class="text-white"><span class="text-blue-500">Operator:</span> Nicklas YLi-Länttä</span>
       </div>
@@ -57,6 +61,13 @@
     
       // Insert date and time into HTML
       document.getElementById("datetime").innerHTML = datetime;
+
+      // get HTTP proto version
+      var http_proto_ver = performance.getEntries()[0].nextHopProtocol.toUpperCase();
+
+      // Insert HTTP protocol version to the document
+      document.getElementById("httpver").innerHTML = http_proto_ver;
+      document.getElementById("httpver2").innerHTML = http_proto_ver;
     </script>
 
 </html>

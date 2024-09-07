@@ -13,7 +13,7 @@
   <div class="flex min-h-screen w-full items-center justify-center bg-blue-600 p-2 text-sm md:text-md">
     <div class="w-full max-w-sm rounded bg-black bg-opacity-75 font-mono sm:max-w-md md:max-w-2xl">
       <div class="flex w-full flex-row rounded bg-gray-900 py-2 px-2 font-sans">
-        <span class="blue bg-opacity-35 rounded bg-white bg-opacity-10 py-2 px-4 font-medium text-white">AS206125 - </span>
+        <span class="blue bg-opacity-35 rounded bg-white bg-opacity-10 py-2 px-4 font-medium text-white">AS206125 - Operated by Nicklas YLi-Länttä</span>
         <div class="my-auto ml-auto flex flex-row gap-2 pr-2">
           <div class="h-4 w-4 rounded-full bg-red-600"></div>
           <div class="h-4 w-4 rounded-full bg-yellow-600"></div>
@@ -47,11 +47,11 @@
         <br />
         <span class="text-white"><span class="text-blue-500">ASN:</span> AS206125</span>
         <br />
-        <span class="text-white"><span class="text-blue-500">NOC contact:</span> noc@as206125.net</span>
+        <span class="text-white"><span class="text-blue-500">24/7* NOC contact:</span> noc@as206125.net</span>
         <br />
         <span class="text-white"><span class="text-blue-500">Abuse contact:</span> abuse@as206125.net</span>
         <br />
-        <span class="text-white"><span class="text-blue-500">Operator:</span> Nicklas YLi-Länttä</span>
+        <span class="text-white"><span class="text-blue-500">Operator:</span> Nicklas YLi-Länttä // nicklas@5i.fi</span>
       </div>
     </div>
     <script>
@@ -67,6 +67,8 @@
 
       if (http_proto_ver == "H2") {
         http_proto_ver = "HTTP/2";
+      } else if (http_proto_ver == "H3") {
+        http_proto_ver = "HTTP/3"
       }
 
       // Insert HTTP protocol version to the document
